@@ -14,18 +14,22 @@ class Fight
         if ($ippo->getSpeed ()> $challenger->getSpeed())
         {
             $staminaChall = $challenger->getStamina() - $ippo->getStrengh();
+            return "La stamina du challenger est $staminaChall";
+
         }
 
         else 
         {
             $staminaIppo = $ippo->getStamina() - $challenger->getStrengh();
-            
+            return "La stamina de Ippo est $staminaIppo";
         }
+        
+        
+
         }
     }
 }
 
-echo
 
 $hajime = new Fight;
 echo $hajime->fighting($ippo,$challenger);
