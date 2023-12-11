@@ -10,21 +10,21 @@ class Fight
         $round = 10;
         for ($i = 1; $i <= $round; $i++)
         {
-            echo "Round $i : "; 
+            echo "Round $i : ";
 
             if ($ippo->getSpeed ()> $challenger->getSpeed())
             {
                 $staminaChall = $challenger->getStamina() - $ippo->getStrengh();
-                $staminaIppo = $ippo->getStamina();
-                return "La stamina du challenger est $staminaChall et la stamina de Ippo est $staminaIppo \n";
+                $challenger->setStamina($staminaChall);
+                echo "La stamina du challenger est $staminaChall et la stamina de Ippo est {$ippo->getStamina()} \n";
 
             }
 
             else 
             {
                 $staminaIppo = $ippo->getStamina() - $challenger->getStrengh();
-                $staminaChall = $challenger->getStamina();
-                return "La stamina de Ippo est $staminaIppo et la stamina du challenger est $staminaChall \n";
+                $ippo->setStamina($staminaIppo);
+                echo "La stamina de Ippo est $staminaIppo et la stamina du challenger est {$challenger->getStamina()} \n";
             }
         }
     }
