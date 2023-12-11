@@ -27,6 +27,11 @@ class Fight
                 echo "La stamina de Ippo est $staminaIppo et la stamina du challenger est {$challenger->getStamina()} \n";
             }
         }
+
+            if ($ippo->getStamina() <=0 || $challenger->getStamina() <= 0)
+            {
+                echo "Combat terminé \n";
+            }
     }
 }
 
