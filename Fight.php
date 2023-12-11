@@ -15,7 +15,7 @@ class Fight
         {
             $staminaChall = $challenger->getStamina() - $ippo->getStrengh();
             $staminaIppo = $ippo->getStamina();
-            return "La stamina du challenger est $staminaChall et la stamina de Ippo est $staminaIppo";
+            return "La stamina du challenger est $staminaChall et la stamina de Ippo est $staminaIppo \n";
 
         }
 
@@ -23,7 +23,7 @@ class Fight
         {
             $staminaIppo = $ippo->getStamina() - $challenger->getStrengh();
             $staminaChall = $challenger->getStamina();
-            return "La stamina de Ippo est $staminaIppo";
+            return "La stamina de Ippo est $staminaIppo et la stamina du challenger est $staminaChall \n";
         }
         
         
