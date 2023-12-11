@@ -71,10 +71,10 @@ public function getStrengh()
 }
 
 $challenger = new Challenger("Onizuka", 19562, 86, 1861);
-echo "Name : " . $challenger->getName() . "\n";
-echo "Stamina : " . $challenger->getStamina() . "\n";
-echo "Speed : " . $challenger->getSpeed() . "\n";
-echo "Strengh : " . $challenger->getStrengh() . "\n";
+// echo "Name : " . $challenger->getName() . "\n";
+// echo "Stamina : " . $challenger->getStamina() . "\n";
+// echo "Speed : " . $challenger->getSpeed() . "\n";
+// echo "Strengh : " . $challenger->getStrengh() . "\n";
 
 
 ?>

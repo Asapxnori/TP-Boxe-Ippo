@@ -71,10 +71,10 @@ public function getStrengh()
 }
 
 $ippo = new Ippo("Ippo", 20762, 90, 1721);
-echo "Name : " . $ippo->getName() . "\n";
-echo "Stamina : " . $ippo->getStamina() . "\n";
-echo "Speed : " . $ippo->getSpeed() . "\n";
-echo "Strengh : " . $ippo->getStrengh() . "\n";
+// echo "Name : " . $ippo->getName() . "\n";
+// echo "Stamina : " . $ippo->getStamina() . "\n";
+// echo "Speed : " . $ippo->getSpeed() . "\n";
+// echo "Strengh : " . $ippo->getStrengh() . "\n";
 
 
 ?>
